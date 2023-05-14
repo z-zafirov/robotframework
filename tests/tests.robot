@@ -2,7 +2,7 @@
 *** Settings ***
 Documentation   The Tests Robot
 Resource        ../keywords/keywords.robot
-Task Teardown   Close Browser
+Test Teardown   Close Browser
 
 
 *** Test Cases ***
