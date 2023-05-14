@@ -9,7 +9,7 @@ def read_excel_data():
     return data
 
 def getUsername():
-    return ["maria", "ivan"]
+    return "maria"
 
 def getPassword():
     return "thoushallnotpass"

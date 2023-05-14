@@ -53,4 +53,10 @@ Export The Table As A PDF
     Wait Until Page Contains Element    id:sales-results
     ${sales_results_html}=    Get Element Attribute    id:sales-results    outerHTML    # Get the HTML table data by locating the element that contains it
     Html To Pdf    ${sales_results_html}    ${CURDIR}${/}..${/}output${/}sales_results.pdf
-    
+
+Login with credentials
+    [Arguments]    ${username}    ${password}
+    Input Text        id:username    ${username}
+    Input Password    id:password    ${password}
+    Submit Form
+    Sleep    3
