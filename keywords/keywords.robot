@@ -4,6 +4,7 @@ Library     RPA.PDF
 Library     RPA.HTTP
 Library     RPA.Excel.Files
 Library     RPA.Browser.Selenium
+Library     ../data/data.py
 
 
 *** Keywords ***
@@ -15,8 +16,10 @@ Open a website
     # Open Available Browser   https://robotsparebinindustries.com/    headless=True
 
 Log in
-    Input Text        id:username    maria
-    Input Password    id:password    thoushallnotpass
+    ${username}=      data.getUsername
+    ${password}=      data.getPassword
+    Input Text        id:username    ${username}
+    Input Password    id:password    ${password}
     Submit Form
     Wait Until Page Contains Element    id:sales-form
 

@@ -18,4 +18,3 @@ Insert the sales data for the week and export it as a PDF
 
 Print an end message
     Log    That robot ran successfully
-

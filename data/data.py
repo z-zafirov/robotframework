@@ -7,3 +7,9 @@ def read_excel_data():
             "target": pd_data_frame['target'].tolist(),
             "sales": pd_data_frame['sales'].tolist()}
     return data
+
+def getUsername():
+    return ["maria", "ivan"]
+
+def getPassword():
+    return "thoushallnotpass"
