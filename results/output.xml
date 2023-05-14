@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.10.2 on win32)" generated="20230514 14:43:53.042" rpa="true" schemaversion="3">
+<suite id="s1" name="Robot With Steps" source="C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps">
+<suite id="s1-s1" name="Tasks" source="C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\tasks.robot">
+<test id="s1-s1-t1" name="Insert the sales data for the week and export it as a PDF" line="67">
+<kw name="Open a website">
+<kw name="Open Browser">
+<arg>https://robotsparebinindustries.com/</arg>
+<arg>Chrome</arg>
+<msg timestamp="20230514 14:43:53.082" level="FAIL">No keyword with name 'Open Browser' found.</msg>
+<status status="FAIL" starttime="20230514 14:43:53.081" endtime="20230514 14:43:53.082"/>
+</kw>
+<status status="FAIL" starttime="20230514 14:43:53.079" endtime="20230514 14:43:53.084"/>
+</kw>
+<kw name="Log in">
+<status status="NOT RUN" starttime="20230514 14:43:53.085" endtime="20230514 14:43:53.085"/>
+</kw>
+<kw name="Wait Until Page Contains Element">
+<arg>id:sales-form</arg>
+<status status="NOT RUN" starttime="20230514 14:43:53.086" endtime="20230514 14:43:53.087"/>
+</kw>
+<kw name="Fill The Form Using The Data From The Excel File">
+<status status="NOT RUN" starttime="20230514 14:43:53.088" endtime="20230514 14:43:53.088"/>
+</kw>
+<kw name="Collect the results">
+<status status="NOT RUN" starttime="20230514 14:43:53.089" endtime="20230514 14:43:53.089"/>
+</kw>
+<kw name="Export The Table As A PDF">
+<status status="NOT RUN" starttime="20230514 14:43:53.089" endtime="20230514 14:43:53.089"/>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg timestamp="20230514 14:43:53.092" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20230514 14:43:53.090" endtime="20230514 14:43:53.092">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20230514 14:43:53.079" endtime="20230514 14:43:53.094">No keyword with name 'Open Browser' found.
+
+Also teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<test id="s1-s1-t2" name="Print an end message" line="76">
+<kw name="Log" library="BuiltIn">
+<arg>That robot ran successfully</arg>
+<doc>Logs the given message with the given level.</doc>
+<msg timestamp="20230514 14:43:53.096" level="INFO">That robot ran successfully</msg>
+<status status="PASS" starttime="20230514 14:43:53.095" endtime="20230514 14:43:53.096"/>
+</kw>
+<kw name="Close Browser" type="TEARDOWN">
+<msg timestamp="20230514 14:43:53.099" level="FAIL">No keyword with name 'Close Browser' found.</msg>
+<status status="FAIL" starttime="20230514 14:43:53.097" endtime="20230514 14:43:53.099">No keyword with name 'Close Browser' found.</status>
+</kw>
+<status status="FAIL" starttime="20230514 14:43:53.095" endtime="20230514 14:43:53.100">Teardown failed:
+No keyword with name 'Close Browser' found.</status>
+</test>
+<doc>My Test Robot.</doc>
+<status status="FAIL" starttime="20230514 14:43:53.062" endtime="20230514 14:43:53.101"/>
+</suite>
+<status status="FAIL" starttime="20230514 14:43:53.045" endtime="20230514 14:43:53.104"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="2" skip="0">All Tasks</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="2" skip="0" id="s1" name="Robot With Steps">Robot With Steps</stat>
+<stat pass="0" fail="2" skip="0" id="s1-s1" name="Tasks">Robot With Steps.Tasks</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230514 14:43:53.065" level="ERROR">Error in file 'C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\tasks.robot' on line 4: Importing library 'RPA.PDF' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\lib
+  C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\resources
+  c:\Users\zdrav\.vscode\extensions\d-biehl.robotcode-0.37.1\bundled\libs
+  c:\Users\zdrav\.vscode\extensions\d-biehl.robotcode-0.37.1\bundled\tool\robotcode
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Python310\lib\site-packages</msg>
+<msg timestamp="20230514 14:43:53.069" level="ERROR">Error in file 'C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\tasks.robot' on line 5: Importing library 'RPA.HTTP' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\lib
+  C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\resources
+  c:\Users\zdrav\.vscode\extensions\d-biehl.robotcode-0.37.1\bundled\libs
+  c:\Users\zdrav\.vscode\extensions\d-biehl.robotcode-0.37.1\bundled\tool\robotcode
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Python310\lib\site-packages</msg>
+<msg timestamp="20230514 14:43:53.073" level="ERROR">Error in file 'C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\tasks.robot' on line 6: Importing library 'RPA.Excel.Files' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\lib
+  C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\resources
+  c:\Users\zdrav\.vscode\extensions\d-biehl.robotcode-0.37.1\bundled\libs
+  c:\Users\zdrav\.vscode\extensions\d-biehl.robotcode-0.37.1\bundled\tool\robotcode
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Python310\lib\site-packages</msg>
+<msg timestamp="20230514 14:43:53.077" level="ERROR">Error in file 'C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\tasks.robot' on line 7: Importing library 'RPA.Browser.Selenium' failed: ModuleNotFoundError: No module named 'RPA'
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\lib
+  C:\Users\zdrav\Projects\Robotframework\Backup\robot_with_steps\resources
+  c:\Users\zdrav\.vscode\extensions\d-biehl.robotcode-0.37.1\bundled\libs
+  c:\Users\zdrav\.vscode\extensions\d-biehl.robotcode-0.37.1\bundled\tool\robotcode
+  C:\Python310\python310.zip
+  C:\Python310\DLLs
+  C:\Python310\lib
+  C:\Python310
+  C:\Python310\lib\site-packages</msg>
+</errors>
+</robot>
